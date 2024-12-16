@@ -58,6 +58,13 @@ body{
 
 audio{
     opacity: 1;
+    border-radius: 50px;
+    box-shadow: 
+    0px 0px 5px rgb(238, 255, 5),
+    0px 0px 5px rgb(231, 235, 228),
+    0px 0px 10px rgb(255, 147, 5),
+    0px 0px 20px rgb(255, 255, 255),
+    0px 0px 20px rgb(243, 247, 11);
 }
 
 /* Premio 1 */
@@ -383,6 +390,18 @@ audio{
     }
 }
 
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-12px);
+    }
+    40%,100%{
+        transform: translateY(0px);
+    }
+}
+
 @media only screen and (max-width: 867px) {
     .stars span:nth-child(14){
         top: 17%;
@@ -432,17 +451,5 @@ audio{
     }
     .stars span:nth-child(2){
         left: 6%;
-    }
-}
-
-@keyframes animate{
-    0%{
-        transform: translateY(0px);
-    }
-    20%{
-        transform: translateY(-12px);
-    }
-    40%,100%{
-        transform: translateY(0px);
     }
 }
